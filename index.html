@@ -14,7 +14,7 @@
     <!-- header section -->
      <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3] h-180 lg:h-310 w-full relative">
         <!-- navbar section -->
-        <nav class="flex justify-between items-center py-5 w-5/6 mx-auto">
+        <nav class="flex justify-between items-center py-5 w-full px-10 lg:w-5/6 mx-auto border-b-1 border-green-600 lg:border-none">
             <img class="lg:hidden h-10" src="./assets/image.png" alt="logo">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-8 lg:hidden">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -35,10 +35,11 @@
                 <button class="px-7 py-1 border-2 border-green-600 rounded-lg text-green-600 hover:bg-green-600 hover:text-white text-lg">Login</button>                                   
                 <button class="px-6 py-1 border-2 border-green-600 bg-green-600 rounded-lg text-white hover:bg-transparent hover:text-green-600 text-lg">Register</button>                                   
             </div>
+
         </nav>
         <!-- hero section -->
         <div class="w-5/6 mx-auto text-center mt-10 lg:mt-15">
-            <p class="font-semibold text-3xl lg:text-6xl lg:leading-18 animate-fadeIn">Freshness <span class="text-green-600">You Can
+            <p class="font-semibold text-3xl lg:text-6xl lg:leading-18 animate-pulse">Freshness <span class="text-green-600">You Can
                 <br> Count</span> On, Prices You’ll Love!</p>
             <p class="text-sm lg:text-lg text-[#111111ad] text-center lg:w-1/2 lg:mx-auto mt-5">Shop your daily essentials at unbeatable prices. From fresh produce to pantry staples, we’ve got you covered every day!</p>
         </div>
@@ -172,18 +173,21 @@
             </div>
         </div>
     </section>
-    <!-- arival & offer section -->
+    <!-- arrival & offer section -->
 
     <section class="w-5/6 mx-auto h-180 lg:h-130">
         <p class="font-bold lg:text-3xl text-xl text-green-600 pt-20">Arrivals & Offers</p>
-        <div class="grid grid-cols-1 lg:grid-cols-5 justify-between items-center mt-10 lg:gap-10">
-             <div class="lg:col-span-3 lg:w-180 h-60 lg:h-80 bg-green-800 p-3 lg:p-10 rounded-xl relative lg:mr-20 mb-10 lg:mb-0">
+
+        <div class="w-full grid grid-cols-1 lg:grid-cols-5 justify-between items-center mt-10 lg:gap-10">
+
+             <div class="lg:col-span-3  h-60 lg:h-80 bg-green-800 p-3 lg:p-10 rounded-xl relative mb-10 lg:mb-0">
                 <img class="mt-2 lg:mt-3 mb-4 lg:mb-7 h-15" src="./assets/dawat-logo.png" alt="dawat-logo">
                 <button class="ml-3 p-2 lg:p-4 bg-green-600 rounded-lg mb-5 text-white font-medium text-sm lg:text-base">Cook Exotic Dishes</button>
                 <p class="ml-3 text-md lg:text-2xl text-white">Up to <span class="lg:text-3xl text-lg font-bold">20% off</span></p>
                 <img class="absolute h-40 lg:h-62 bottom-0 right-1" src="./assets/dawat-mock-up.png" alt="dawat-mock-up">
             </div>
-            <div class="lg:col-span-2 lg:w-140 h-60 lg:h-80 bg-blue-900 p-4 lg:p-10 rounded-xl relative">
+
+            <div class="lg:col-span-2 h-60 lg:h-80 bg-blue-900 p-4 lg:p-10 rounded-xl relative">
                 <img class="mb-2 lg:mb-5 h-25" src="./assets/india-gate-logo.png" alt="dawat-logo">
                 <button class="ml-2 p-2 lg:p-4 bg-blue-600 rounded-lg mb-5 text-white font-medium text-sm lg:text-base">Cook Exotic Dishes</button>
                 <p class="ml-2 text-md lg:text-2xl text-white">Up to <span class="lg:text-3xl text-lg font-bold">20% off</span></p>
@@ -191,5 +195,40 @@
             </div>
         </div>
     </section>
+
+    <!-- footer section -->
+     <section class="h-220 lg:h-180 w-full bg-green-600 relative mt-80 lg:pt-60 pt-90">
+
+        <div class="w-5/6 h-115 bg-[#EFEBE3] mx-auto rounded-xl absolute -top-50 left-1/2 -translate-x-1/2 lg:p-10">
+            <div class="h-full flex lg:flex-row flex-col justify-center items-center p-3 w-3/4 lg:w-full mx-auto">
+                <img class="lg:mr-20 h-40 lg:h-full" src="./assets/vegetable-busket.png" alt="vegetable-busket">
+
+                <div class=" flex flex-col justify-evenly lg:justify-between h-2/3 items-center lg:items-start w-full lg:w-2/5">  
+                    <p class="font-bold text-green-500 text-xl lg:text-3xl">Get Grocery News!</p>
+                    <p class="font-base lg:font-medium lg:text-base text-sm text-center lg:text-start w-3/4">Exclusive training tips, ticks, product deals and more.</p>
+                    <input class="rounded-lg bg-white p-2 lg:p-4 block lg:w-3/4 w-full" type="text" placeholder="Enter email.....">
+                    <button class="w-30 bg-green-600 text-white py-2 rounded-lg text-md">Subscribe</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="w-5/6 mx-auto flex flex-col lg:flex-row justify-between items-center h-120">
+            <div class="w-full lg:w-1/5">
+                <img src="./assets/logo-footer.png" alt="footer-logo">
+                <p class="text-sm font-light text-[#f0f0f0] mt-7 mb-10">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </div>
+            <div class="w-full lg:w-1/5">
+                <ul class="space-y-7 lg:space-y-5 text-[#f0f0f0]">
+                    <li><a class="text-lg" href="#">Product</a></li>
+                    <li><a class="text-lg" href="#">Services</a></li>
+                    <li><a class="text-lg" href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="w-full lg:w-1/5">
+                <p class="text-[#f0f0f0] pt-12">Follow Us</p>
+                <img class="h-10 mt-4" src="./assets/social.png" alt="social">
+            </div>
+        </div>
+     </section>
 </body>
 </html>
